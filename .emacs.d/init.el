@@ -833,6 +833,11 @@ by using nxml's indentation rules."
     (buffer-string)))
 
 (setq initial-scratch-message (get-string-from-file "~/.emacs.d/logo"))
+
+(setq global-mode-string
+      (append global-mode-string
+              '((:eval (concat "[☁ " (getenv "AM_PROFILE") "]")))))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
