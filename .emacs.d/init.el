@@ -810,6 +810,7 @@ by using nxml's indentation rules."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+<<<<<<< HEAD
  '(cider-prompt-for-symbol nil)
  '(custom-safe-themes
    (quote
@@ -819,6 +820,37 @@ by using nxml's indentation rules."
    (quote
     (solarized-theme powerline clj-refactor zenburn-theme yasnippet undo-tree tuareg puppet-mode paredit multiple-cursors markdown-mode magit ido-ubiquitous highlight-symbol git-gutter emmet-mode diminish company cider align-cljlet ag)))
  '(powerline-default-separator nil))
+=======
+ '(ac-trigger-key nil)
+ '(browse-url-mozilla-program "firefox")
+ '(case-fold-search t)
+ '(cider-prompt-for-symbol nil)
+ '(column-number-mode t)
+ '(current-language-environment "UTF-8")
+ '(default-input-method "rfc1345")
+ '(global-font-lock-mode t nil (font-lock))
+ '(haskell-mode-hook (quote (turn-on-haskell-indent turn-on-haskell-indentation turn-on-eldoc-mode capitalized-words-mode turn-on-haskell-doc-mode imenu-add-menubar-index)))
+ '(ibuffer-default-sorting-mode (quote alphabetic))
+ '(ibuffer-display-summary nil)
+ '(ibuffer-formats (quote ((mark modified read-only " " (name 18 30 :left :elide)) (mark " " (name 16 -1) " " filename))))
+ '(ibuffer-saved-filter-groups (quote (("default" ("special buffers" (name . "^\\*"))))))
+ '(ibuffer-saved-filters (quote (("gnus" ((or (mode . message-mode) (mode . mail-mode) (mode . gnus-group-mode) (mode . gnus-summary-mode) (mode . gnus-article-mode)))) ("programming" ((or (mode . emacs-lisp-mode) (mode . cperl-mode) (mode . c-mode) (mode . java-mode) (mode . idl-mode) (mode . lisp-mode)))))))
+ '(ibuffer-use-other-window t)
+ '(inferior-lisp-program "c:\\dev\\bin\\ccl\\wx86cl.exe")
+ '(minimap-enlarge-certain-faces (quote always))
+ '(minimap-hide-fringes t)
+ '(minimap-window-location (quote right))
+ '(org-agenda-files (quote ("i:/notes/notes.org")))
+ '(org-support-shift-select t)
+ '(show-paren-mode t)
+ '(slime-backend "")
+ '(speedbar-use-images nil)
+ '(tab-width 4)
+ '(tool-bar-mode nil)
+ '(undo-outer-limit 24000000)
+ '(uniquify-buffer-name-style (quote post-forward) nil (uniquify))
+ '(yas-trigger-key "M-SPC"))
+>>>>>>> Cider should never prompt for symbols
 
 
 (put 'dired-find-alternate-file 'disabled nil)
